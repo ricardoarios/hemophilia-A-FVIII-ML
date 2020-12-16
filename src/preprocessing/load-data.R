@@ -30,6 +30,8 @@ library(parallel)
 library(MASS)
 library(tidyr)
 library(dplyr)
+library(smotefamily)
+library(corrplot)
 
 # loading all required functions
 source("src/preprocessing/createBinaryClass.R")
