@@ -50,32 +50,32 @@ output<-randomForest.class(train.task, test.task = NA, .MEASURE, save.model = fi
 
 file.models[2] = "results/no-aug/decision.tree"
 # uncomment the following command if you need retrain it
-#output<-decisionTree.class(train.task, test.task = NA, .MEASURE, save.model = file.models[2])
+output<-decisionTree.class(train.task, test.task = NA, .MEASURE, save.model = file.models[2])
 #
 
 file.models[3] = "results/no-aug/svm.rad"
 # uncomment the following command if you need retrain it
-#output<-svm.class(train.task, test.task = NA, pol = FALSE, .MEASURE, save.model = file.models[3])
+output<-svm.class(train.task, test.task = NA, pol = FALSE, .MEASURE, save.model = file.models[3])
 #
 
 file.models[4] ="results/no-aug/svm.pol"
 # uncomment the following command if you need retrain it
-#output<-svm.class(train.task, test.task = NA, pol = TRUE, .MEASURE, save.model = file.models[4])
+output<-svm.class(train.task, test.task = NA, pol = TRUE, .MEASURE, save.model = file.models[4])
 #
 
 file.models[5] = "results/no-aug/naive.bayes"
 # uncomment the following command if you need retrain it
-#output<-naiveBayes.class(train.task, test.task = NA, .MEASURE, save.model = file.models[5])
+output<-naiveBayes.class(train.task, test.task = NA, .MEASURE, save.model = file.models[5])
 #
 
 file.models[6] = "results/no-aug/xg.boost"
 # uncomment the following command if you need retrain it
-#output<-xgboost.class(train.task, test.task = NA, .MEASURE, save.model = file.models[6])
+output<-xgboost.class(train.task, test.task = NA, .MEASURE, save.model = file.models[6])
 
 ############################################
 #####... loading final test dataset ...#####
-predict.dataset<-read.table(file="data/src/dataset_for_prediction_all_positions_v2.csv", 
-                            sep=";", header = T)
+predict.dataset<-read.table(file="dataset/src/dataset_for_prediction_all_positions_v2.csv", 
+	sep=";", header = T)
 na.rows<-c()
 for(i in 1:ncol(predict.dataset)){
   na.rows<-c(na.rows, which(is.na(predict.dataset[,i])))
@@ -86,7 +86,7 @@ if(length(na.rows) > 0){
 
 ### we reload the training dataset again just to make sure
 # no training instance is again used during the test phase
-dataHemophilia<-load.full.dataset(dataset = "data/severity-FVIII-Activity-Regression.Rdata")
+dataHemophilia<-load.full.dataset(dataset = "dataset/severity-FVIII-Activity-Regression.Rdata")
 dataHemophilia<-dataHemophilia[-c(dataHemophilia[,-c(1:9,ncol(dataHemophilia))] %>% duplicated() %>% which()), ]
 
 
