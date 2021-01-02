@@ -24,7 +24,7 @@
 #	grant of patent rights.
 #######################################################
 
-#' This method validate the classification results
+#' This method validates the classification results
 #' 
 #' @param dataset - a data matrix including the classification probabilities
 #' @return labels based on classification probabilities

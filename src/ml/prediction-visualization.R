@@ -3,18 +3,19 @@ rm(list=ls())
 
 #####... load dataset ...#####
 # V3 - based on regression
-source("R/AM/classification/reg-class/load-data.R")
+source("src/preprocessing/load-data.R")
 
 
 #####... load validation measures ...#####
-source("R/AM/validation-GreyZone.R")
+source("src/validation/validation-GreyZone.R")
 
 #####... load classifiers ...#####
-source("R/AM/classification/reg-class/rf.R")
-source("R/AM/classification/reg-class/dt.R")
-source("R/AM/classification/reg-class/svm.R")
-source("R/AM/classification/reg-class/naiveBayes.R")
-source("R/AM/classification/reg-class/xgboost.R")
+source("src/ml/rf.R")
+source("src/ml/svm.R")
+source("src/ml/dt.R")
+source("src/ml/svm.R")
+source("src/ml/naiveBayes.R")
+source("src/ml/xgboost.R")
 
 
 #####... Save prediction result ...#####
@@ -44,7 +45,7 @@ train.task <- mlr::makeClassifTask(data = train, target = "group", positive = "O
 
 file.models[1] = "results/no-aug/random.forest"
 # uncomment the following command if you need retrain it
-#output<-randomForest.class(train.task, test.task = NA, .MEASURE, save.model = file.models[1], threshold = 0.7)
+output<-randomForest.class(train.task, test.task = NA, .MEASURE, save.model = file.models[1], threshold = 0.7)
 #
 
 file.models[2] = "results/no-aug/decision.tree"
