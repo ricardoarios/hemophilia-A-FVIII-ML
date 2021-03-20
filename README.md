@@ -2,8 +2,6 @@
 
 ### Thanks for your interest in using Hema-Class.
 
-![](images/protein.png)
-
 <p align="center">
   <img width="235" height="329" src="images/protein.png">
 </p>
