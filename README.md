@@ -2,7 +2,7 @@
 
 ### Thanks for your interest in using Hema-Class.
 
-![](hemophilia-A-FVIII-ML/images/protein.png)
+![](images/protein.png)
 
 Project: Hema-Class framework
 
