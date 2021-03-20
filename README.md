@@ -30,7 +30,7 @@ Rscript src/ml/prediction-visualization-aug.R
 
 You can also open R and run:
 
-```python
+```Prolog
 source(src/ml/prediction-visualization.R)
 source(src/ml/prediction-visualization-aug.R)
 ```
