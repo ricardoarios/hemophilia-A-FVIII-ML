@@ -2,11 +2,7 @@
 
 ### Thanks for your interest in using Hema-Class.
 
-
-
-<div style="float: right">
-    ![](images/protein.png)
-</div>
+<img src="images/protein.png" alt="protein" style="float:right;width:235px;height:329px;">
 
 Hemophilia A is a relatively rare hereditary coagulation disorder, caused by the synthesis of defective Factor VIII protein (FVIII). This condition impairs the coagulation cascade, and if left untreated, causes permanent joint damage and poses a risk of fatal intracranial hemorrhage in case of traumatic events. In its severe form, patients who have access to supportive health care systems can benefit from prophylactic treatment, which consists of regular life-long administrations of recombinant forms of the FVIII protein.
 
