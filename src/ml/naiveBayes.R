@@ -1,8 +1,22 @@
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+# 
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+#
+# This code is released as part of the manuscript
+# "Prediction of hemophilia A severity using a small-input machine learning framework", by Lopes et al., submitted in 2021.
 #######################################################
 # Code implemented to model the dataset using Naive 
 #	Bayes
 #
-#######################################################
 # This code is part of the Hema-Class framework
 # Date: December, 2020
 #
@@ -11,17 +25,6 @@
 #		Tatiane Nogueira, 
 #		Rodrigo Mello
 #
-#
-# GNU General Public License v3.0
-#
-# Permissions of this strong copyleft license are 
-#	conditioned on making available complete 
-#	source code of licensed works and 
-#	modifications, which include larger works 
-#	using a licensed work, under the same license. 
-#	Copyright and license notices must be 
-#	preserved. Contributors provide an express 
-#	grant of patent rights.
 #######################################################
 
 #' This method runs a grid search to look for the best
