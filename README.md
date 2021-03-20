@@ -2,19 +2,39 @@
 
 ### Thanks for your interest in using Hema-Class.
 
-![](images/protein.png){:height="50%" width="50%"}
+<img align="right" src="images/protein.png">
 
-Project: Hema-Class framework
+Hemophilia A is a relatively rare hereditary coagulation disorder, caused by the synthesis of defective Factor VIII protein (FVIII). This condition impairs the coagulation cascade, and if left untreated, causes permanent joint damage and poses a risk of fatal intracranial hemorrhage in case of traumatic events. In its severe form, patients who have access to supportive health care systems can benefit from prophylactic treatment, which consists of regular life-long administrations of recombinant forms of the FVIII protein.
 
-Description: Prediction of hemophilia A severity using a small-input machine learning framework
 
-All classification codes are organized into folder: hemophilia-A-FVIII-ML/src/ml.
-The regression codes can be found at hemophilia-A-FVIII-ML/src/ml/regression.
+We designed a machine learning framework for hemophilia A classification (Hema-Class), and even though our training data was limited, after careful optimization Hema-Class was able to identify properties related to severe and mild forms of the disease. 
 
-To reproduce all experiments using individual ML classification models on the training dataset, please verify the source codes: 
-- prediction-visualization.R
-- prediction-visualization-aug.R
+We predicted the severity of all residues not yet reported in the medical literature and confirmed its agreement with clinical data, and with in vitro mutagenesis assays.
 
-To reproduce all experiments using regression, please run the code "run-all.R" located at regression folder.
+Here you will find the datasets and the source code used in the manuscript “Prediction of hemophilia A severity using a small-input machine learning framework”, by Tiago Lopes, Ricardo Rios, Tatiane Nogueira and Rodrigo Mello (Submitted).
 
-All pre-trained classification models are stored in the Result folder.
+Please note that we cannot make available the data from other databases; to access the complete mutation datasets, please visit the EAHAD and the CHAMPS websites.
+
+The organization of the material is:
+
+> - **/datasets** - contains the datasets to reproduce our findings and create the figures.
+> - **/src** - contains the source code for the machine learning framework and for other analyses.
+> - **/results** - you can find the pre-trained classification models in this folder.
+> - **/workdir** - please execute the code when you are inside this directory.
+
+To reproduce all experiments using individual ML classification models on the training dataset, please run the source codes:
+
+```Prolog
+Rscript src/ml/prediction-visualization.R 
+Rscript src/ml/prediction-visualization-aug.R
+```
+
+You can also open R and run:
+
+```Prolog
+source(src/ml/prediction-visualization.R)
+source(src/ml/prediction-visualization-aug.R)
+```
+If you find any issues with the code, please contact us: tiago-jose@ncchd.go.jp, ricardoar@ufba.br, tatiane.nogueira@ufba.br, mello@icmc.usp.br
+
+On the behalf of all of the authors, we appreciate your interest in Hema-Class and hope it is useful to your research.
