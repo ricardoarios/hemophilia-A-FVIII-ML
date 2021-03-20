@@ -23,7 +23,7 @@ The organization of the material is:
 
 To reproduce all experiments using individual ML classification models on the training dataset, please run the source codes:
 
-```R
+```C
 Rscript src/ml/prediction-visualization.R 
 source(src/ml/prediction-visualization.R)
 ```
