@@ -4,6 +4,10 @@
 
 ![](images/protein.png)
 
+<p align="center">
+  <img width="235" height="329" src="images/protein.png">
+</p>
+
 Hemophilia A is a relatively rare hereditary coagulation disorder, caused by the synthesis of defective Factor VIII protein (FVIII). This condition impairs the coagulation cascade, and if left untreated, causes permanent joint damage and poses a risk of fatal intracranial hemorrhage in case of traumatic events. In its severe form, patients who have access to supportive health care systems can benefit from prophylactic treatment, which consists of regular life-long administrations of recombinant forms of the FVIII protein.
 
 We designed a machine learning framework for hemophilia A classification (Hema-Class), and even though our training data was limited, after careful optimization Hema-Class was able to identify properties related to severe and mild forms of the disease. 
