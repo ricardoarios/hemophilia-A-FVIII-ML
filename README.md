@@ -35,3 +35,6 @@ You can also open R and run:
 source(src/ml/prediction-visualization.R)
 source(src/ml/prediction-visualization-aug.R)
 ```
+If you find any issues with the code, please contact us: tiago-jose@ncchd.go.jp, ricardoar@ufba.br, tatiane.nogueira@ufba.br, mello@icmc.usp.br
+
+On the behalf of all of the authors, we appreciate your interest in Hema-Class and hope it is useful to your research.
