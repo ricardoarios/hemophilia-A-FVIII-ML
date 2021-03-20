@@ -2,7 +2,7 @@
 
 ### Thanks for your interest in using Hema-Class.
 
-![](images/protein.png){:height="50%" width="50%"}
+![](images/protein.png)
 
 Project: Hema-Class framework
 
