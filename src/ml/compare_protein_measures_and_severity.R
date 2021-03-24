@@ -62,20 +62,25 @@ compare_protein_measures_and_severity = function(inputSet){
   
   # AA_dist
   dataset = inputSet
-  a = TukeyHSD(aov(dataset$AA_dist~dataset$Calculated_Severity))
+  
+  selectedCols = match(c("AA_dist", "Calculated_Severity"), colnames(dataset))
+  
+  tmpSet = dataset[!duplicated(dataset[,selectedCols]),]
+  
+  a = TukeyHSD(aov(tmpSet$AA_dist~tmpSet$Calculated_Severity))
   print(a)
   
   myTitle = paste(format(round(a[[1]][1,4], 4), nsmall = 2), 
                   format(round(a[[1]][2,4], 4), nsmall = 2), 
                   format(round(a[[1]][3,4], 4), nsmall = 2))
   
-  boxplot(na.omit(dataset$AA_dist[which(dataset$Calculated_Severity == "Mild")]), 
-          na.omit(dataset$AA_dist[which(dataset$Calculated_Severity == "Moderate")]), 
-          na.omit(dataset$AA_dist[which(dataset$Calculated_Severity == "Severe")]), 
+  boxplot(na.omit(tmpSet$AA_dist[which(tmpSet$Calculated_Severity == "Mild")]), 
+          na.omit(tmpSet$AA_dist[which(tmpSet$Calculated_Severity == "Moderate")]), 
+          na.omit(tmpSet$AA_dist[which(tmpSet$Calculated_Severity == "Severe")]), 
           col="white", names=c("Mild", "Moderate", "Severe"), 
           las=1, main=paste("P-value:", myTitle), ylab="AA_dist")
   
-  stripchart(dataset$AA_dist~dataset$Calculated_Severity, 
+  stripchart(tmpSet$AA_dist~tmpSet$Calculated_Severity, 
              col=c("palegreen", " mediumpurple1", "goldenrod1"), pch=19,
              vertical=T, method="jitter", add=T)
   
@@ -450,7 +455,7 @@ compare_protein_measures_and_severity = function(inputSet){
 
 mydata = read.table("../datasets/training_set_v3.csv", header=T, sep="\t", quote="", stringsAsFactors = F)
 
-svg(filename = "Figure_2_boxplots.svg", width = 5, height = 20)
+svg(filename = "Figure_1_boxplots.svg", width = 5, height = 20)
 
 par(mfrow=c(8,2))
 

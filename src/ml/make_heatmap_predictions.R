@@ -66,7 +66,7 @@ for(i in 1:nrow(ensemble)){
 
 # Here it is possible to adjust the "size" of the grey-zone
 # hence, the colors and the shape of the heatmap will change.
-result[which(result >= .32 & result <= .67, arr.ind = T)] = .5
+result[which(result >= .39 & result < .63, arr.ind = T)] = .5
 
 # Function derived from the gplots library
 heatmap.2(as.matrix(result), trace="none", col=bluered(100), Rowv = F)
