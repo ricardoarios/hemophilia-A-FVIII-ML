@@ -11,7 +11,7 @@ We designed a machine learning framework for hemophilia A classification (Hema-C
 
 We predicted the severity of all residues not yet reported in the medical literature and confirmed its agreement with clinical data, and with in vitro mutagenesis assays.
 
-Here you will find the datasets and the source code used in the manuscript “Prediction of hemophilia A severity using a small-input machine learning framework”, by Tiago Lopes, Ricardo Rios, Tatiane Nogueira and Rodrigo Mello (Submitted).
+Here you will find the datasets and the source code used in the manuscript <a href='https://www.nature.com/articles/s41540-021-00183-9'>“Prediction of hemophilia A severity using a small-input machine learning framework”</a>, by Tiago Lopes, Ricardo Rios, Tatiane Nogueira and Rodrigo Mello.
 
 Please note that we cannot make available the data from other databases; to access the complete mutation datasets, please visit the EAHAD and the CHAMPS websites.
 
@@ -32,8 +32,8 @@ Rscript src/ml/prediction-visualization-aug.R
 You can also open R and run:
 
 ```Prolog
-source(src/ml/prediction-visualization.R)
-source(src/ml/prediction-visualization-aug.R)
+source("src/ml/prediction-visualization.R")
+source("src/ml/prediction-visualization-aug.R")
 ```
 If you find any issues with the code, please contact us: tiago-jose@ncchd.go.jp, ricardoar@ufba.br, tatiane.nogueira@ufba.br, mello@icmc.usp.br
 
