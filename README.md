@@ -17,7 +17,7 @@ Please note that we cannot make available the data from other databases; to acce
 
 The organization of the material is:
 
-> - **/datasets** - contains the datasets to reproduce our findings and create the figures.
+> - **/dataset** - contains the datasets to reproduce our findings and create the figures.
 > - **/src** - contains the source code for the machine learning framework and for other analyses.
 > - **/results** - you can find the pre-trained classification models in this folder.
 > - **/workdir** - please execute the code when you are inside this directory.
