@@ -18,12 +18,12 @@
 #
 # This code will generate the plots from Figure 2 of the paper.
 # To make the boxplots from Supplementary Figure 3, just load the predictions of the other classifiers.
-# They are at the folder datasets/predictions_classifiers/
+# They are at the folder dataset/predictions_classifiers/
 
 library(igraph)
 
 
-mydata = read.table("../datasets/2r7e_network_formatted.csv", header=T, sep="\t", stringsAsFactors = F)
+mydata = read.table("../dataset/2r7e_network_formatted.csv", header=T, sep="\t", stringsAsFactors = F)
 
 mydata = unique(mydata[,1:4])
 

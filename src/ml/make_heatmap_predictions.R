@@ -18,17 +18,17 @@
 #
 # This code will generate the plots from Figure 2 of the paper.
 # To make the boxplots from Supplementary Figure 3, just load the predictions of the other classifiers.
-# They are at the folder datasets/predictions_classifiers/
+# They are at the folder dataset/predictions_classifiers/
 
 library(gplots)
 
 # Load and clean the prediction files
-nb = read.table("../datasets/predictions_classifiers/naive.bayes.csv", header=T, sep=",", quote="\"", stringsAsFactors = F)
-dt = read.table("../datasets/predictions_classifiers/decision.tree.csv", header=T, sep=",", quote="\"", stringsAsFactors = F)
+nb = read.table("../dataset/predictions_classifiers/naive.bayes.csv", header=T, sep=",", quote="\"", stringsAsFactors = F)
+dt = read.table("../dataset/predictions_classifiers/decision.tree.csv", header=T, sep=",", quote="\"", stringsAsFactors = F)
 
 # Remove instances from the training set (443 instances)
 
-training = read.table("../datasets/training_set_v3.csv", header=T, sep="\t", quote="", stringsAsFactors = F)
+training = read.table("../dataset/training_set_v3.csv", header=T, sep="\t", quote="", stringsAsFactors = F)
 
 toRemove = vector()
 

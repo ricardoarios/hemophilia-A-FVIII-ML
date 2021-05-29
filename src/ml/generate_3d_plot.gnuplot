@@ -20,7 +20,7 @@
 #
 
 set dgrid3d 100,100
-splot "../datasets/gridSearch_accuracy.csv" with pm3d
+splot "../dataset/gridSearch_accuracy.csv" with pm3d
 set grid
 
 set ylabel "Accuracy Mild/Moderate"

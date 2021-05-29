@@ -18,23 +18,23 @@
 #
 # This code will generate the plots from Figure 2 of the paper.
 # To make the boxplots from Supplementary Figure 3, just load the predictions of the other classifiers.
-# They are at the folder datasets/predictions_classifiers/
+# They are at the folder dataset/predictions_classifiers/
 
 upperLimit = 50
 lowerLimit = 50
 
 # Load the mutagenesis data
-a2 = read.table("../datasets/A2_mutagenesis.csv", header=T, sep="\t", quote="", stringsAsFactors = F)
-c2 = read.table("../datasets/C2_mutagenesis.csv", header=T, sep="\t", quote="", stringsAsFactors = F)
+a2 = read.table("../dataset/A2_mutagenesis.csv", header=T, sep="\t", quote="", stringsAsFactors = F)
+c2 = read.table("../dataset/C2_mutagenesis.csv", header=T, sep="\t", quote="", stringsAsFactors = F)
 
 
 # Load and clean the prediction files
-nb = read.table("../datasets/predictions_classifiers/naive.bayes.csv", header=T, sep=",", quote="\"", stringsAsFactors = F)
-dt = read.table("../datasets/predictions_classifiers/decision.tree.csv", header=T, sep=",", quote="\"", stringsAsFactors = F)
+nb = read.table("../dataset/predictions_classifiers/naive.bayes.csv", header=T, sep=",", quote="\"", stringsAsFactors = F)
+dt = read.table("../dataset/predictions_classifiers/decision.tree.csv", header=T, sep=",", quote="\"", stringsAsFactors = F)
 
 # Remove instances from the training set (443 instances)
 
-training = read.table("../datasets/training_set_v3.csv", header=T, sep="\t", quote="", stringsAsFactors = F)
+training = read.table("../dataset/training_set_v3.csv", header=T, sep="\t", quote="", stringsAsFactors = F)
 
 toRemove = vector()
 

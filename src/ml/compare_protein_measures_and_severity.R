@@ -453,7 +453,7 @@ compare_protein_measures_and_severity = function(inputSet){
 
 ### Use the code below to trigger the execution
 
-mydata = read.table("../datasets/training_set_v3.csv", header=T, sep="\t", quote="", stringsAsFactors = F)
+mydata = read.table("../dataset/training_set_v3.csv", header=T, sep="\t", quote="", stringsAsFactors = F)
 
 svg(filename = "Figure_1_boxplots.svg", width = 5, height = 20)
 
