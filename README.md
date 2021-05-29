@@ -33,8 +33,26 @@ You can also open R and run:
 
 ```Prolog
 source("src/ml/prediction-visualization.R")
+```
+
+```Prolog
 source("src/ml/prediction-visualization-aug.R")
 ```
+
+To reproduce our figures and results, we recommend to run all codes from the workdir directory. For example:
+
+```Prolog
+cd workdir/
+
+Rscript ../src/ml/make_heatmap_predictions.R
+```
+
+You can also open R, from the workdir directory, and run:
+
+```Prolog
+source("../src/ml/make_heatmap_predictions.R")
+```
+
 If you find any issues with the code, please contact us: tiago-jose@ncchd.go.jp, ricardoar@ufba.br, tatiane.nogueira@ufba.br, mello@icmc.usp.br
 
 On the behalf of all of the authors, we appreciate your interest in Hema-Class and hope it is useful to your research.
